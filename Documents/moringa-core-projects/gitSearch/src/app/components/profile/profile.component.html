@@ -1,25 +1,54 @@
-<div *ngIf="profile">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            {{profile.name}} <small>{{profile.login}}</small>
-            <span *ngIf="profile.company">,is at</span>
-            {{profile.company}}
-        </div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-sm-2">
-                    <img src="{{profile.avatar_url}}" class="img-fluid rounded-circle" alt="Profile Image">
-                </div>
-                <div class="col-sm-5">
-                    <ul class="list-group">
-                        <li class="list-group-item" *ngIf="profile.bio">{{profile.bio }}</li>
-                        <li class="list-group-item" *ngIf="profile.type">Available for hire</li>
-                        <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}"target="blank">{{profile.blog}}</a> </li>
-                        <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}"target="blank">{{profile.email}}</a> </li>
-                    </ul>
-                </div>
-                
+<!-- <div class="body" *ngIf="profile">
+        <div class="card-container">
+          <div class="upper-container">
+            <div class="image-container">
+              <img src="{{profile.avatar_url}}" alt="Image not found">
             </div>
+      
+          </div>
+      
+          <div class="lower-container">
+            <div>
+              <h3>{{profile.name}}</h3>
+            </div>
+            <div class="col-sm-5" *ngFor="let repo of repos">
+              <p>{{repo.name}}</p>
+            </div>
+            <div>
+              <a href="#" class="btn">View in Github</a>
+          </div>
+          </div>
+      
         </div>
+      </div> -->
+
+
+
+
+<div class="container"*ngIf="profile">
+  <div class="content">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="{{profile.avatar_url}}" class="img-fluid rounded-circle" alt="Profile Image">
+        </div>
+        <div class="col-sm-5">
+          <ul class="list-group">
+            <li class="list-group-item" *ngIf="profile.bio">{{profile.name}}</li>
+            <li class="list-group-item" *ngIf="profile.bio">{{profile.bio }}</li>
+            <li class="list-group-item" *ngIf="profile.type">Available for hire</li>
+            <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}"
+                target="blank">{{profile.blog}}</a> </li>
+            <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}"
+                target="blank">{{profile.email}}</a> </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4" *ngFor="let repo of repos">
+            <p>{{repo.name}}</p>
+            <!-- <p>{{repo.description}}</p> -->
+        </div>
+      </div>
     </div>
-     </div>
+  </div>
+</div>

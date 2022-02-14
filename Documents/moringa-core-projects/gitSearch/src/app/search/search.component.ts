@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileComponent } from '../components/profile/profile.component';
+import { ProfileService } from '../services/profile.service';
 
 @Component({
   selector: 'app-search',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+
+  
 
   constructor() { }
 
