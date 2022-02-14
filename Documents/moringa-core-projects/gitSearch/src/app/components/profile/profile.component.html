@@ -7,7 +7,7 @@
         </div>
         <div class="panel-body">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-sm-2">
                     <img src="{{profile.avatar_url}}" class="img-fluid rounded-circle" alt="Profile Image">
                 </div>
                 <div class="col-sm-5">
@@ -16,9 +16,9 @@
                         <li class="list-group-item" *ngIf="profile.type">Available for hire</li>
                         <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}"target="blank">{{profile.blog}}</a> </li>
                         <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}"target="blank">{{profile.email}}</a> </li>
-
                     </ul>
                 </div>
+                
             </div>
         </div>
     </div>
