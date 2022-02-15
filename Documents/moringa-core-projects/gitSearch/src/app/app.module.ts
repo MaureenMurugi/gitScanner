@@ -9,6 +9,9 @@ import { ProfileService } from './services/profile.service';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
+
+
 
 
 @NgModule({
@@ -16,13 +19,15 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     ProfileComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

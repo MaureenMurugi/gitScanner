@@ -1,0 +1,35 @@
+
+<div class="newsletter">
+    <form action="ngForm" class="search-form" (ngSubmit)="findProfile()"> 
+        <input type="text" class="form-control" placeholder="Username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        <input type="submit" name="submit" value="Let's Search">
+    </form>
+</div>
+<div class="container"*ngIf="profile">
+    <div class="content">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-2">
+            <img src="{{profile.avatar_url}}" class="img-fluid rounded-circle" alt="Profile Image">
+          </div>
+          <div class="col-sm-5">
+            <ul class="list-group">
+              <li class="list-group-item" *ngIf="profile.bio">{{profile.name}}</li>
+              <li class="list-group-item" *ngIf="profile.bio">{{profile.bio }}</li>
+              <li class="list-group-item" *ngIf="profile.type">Available for hire</li>
+              <li class="list-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}"
+                  target="blank">{{profile.blog}}</a> </li>
+              <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}"
+                  target="blank">{{profile.email}}</a> </li>
+            </ul>
+          </div>
+  
+          <div class="col-sm-4" *ngFor="let repo of repos">
+              <p>{{repo.name}}</p>
+              <!-- <p>{{repo.description}}</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

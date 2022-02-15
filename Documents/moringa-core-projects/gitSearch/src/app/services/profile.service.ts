@@ -16,7 +16,7 @@ export class ProfileService {
     this.username = 'MaureenMurugi';
   }
   getProfileInfo(){
-    return this.http.get("https://api.github.com/users/" + this.username + "?client_id" + this.clientid
+    return this.http.get("https://api.github.com/users/MaureenMurugi?acces_token=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" + this.username + "?client_id" + this.clientid
     + "&client_secret=" + this.clientsecret)
    ;
   }
