@@ -13,7 +13,7 @@ export class SearchService {
 
   constructor(private http: HttpClient) { 
     console.log("Well, here we are!");
-    this.username = 'Thuku7';
+    this.username = '';
   }
 
   getProfileInfo(){
