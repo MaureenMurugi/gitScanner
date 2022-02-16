@@ -38,7 +38,7 @@
 
 ## Live Application
 
-> The project is live at 'hhttps://maureenmurugi.github.io/gitScanner/gitScanner/'
+> The project is live at 'https://maureenmurugi.github.io/gitScanner/gitScanner'
 
 
 ## Contact Information
