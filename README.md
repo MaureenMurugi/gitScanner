@@ -18,17 +18,15 @@
 
 > Maureen-Murugi
 
-## Set-up Instructions
+## How it works
 
->To start using this project:
+>On launching the website, the landing page includes my personal profile as it is on Github.
 
-> git clone 'https://github.com/MaureenMurugi/gitScanner.git'
+> The profile displays,in two card-elements, the username,the number of public repositories and the time the account was created. The second card on the landing page includes all the repositories present in the users Github account.
 
->cd gitSearch
+> The Nav-bar contains two routes; the profile, which is also the landing page and search route.
 
->npm install
-
->ng serve to access the live server; 'https://localhost:4200'
+> On search route, the application allows, the user to search a name/account present on Github, on click button the user is able, to view the account username, number of public repositories and time. In a second card the user is able to view all the public repositories of the account searched.
 
 ## Technologies used
 
